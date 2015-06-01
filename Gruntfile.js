@@ -4,10 +4,17 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    angularToolbox: {}
+    angularToolbox: {},
+    codeclimate: {
+      options: {
+        file: '<%= angularToolbox.folder.coverageReport %>/lcov.info',
+        token: process.env.CODECLIMATE_REPO_TOKEN
+      }
+    }
   });
 
   grunt.loadNpmTasks('grunt-angular-toolbox');
+  grunt.loadNpmTasks('grunt-codeclimate-reporter');
 
   grunt.registerTask('default', ['test']);
 };

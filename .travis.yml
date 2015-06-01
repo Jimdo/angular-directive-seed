@@ -1,21 +1,17 @@
 language: node_js
 node_js:
-  - "0.10"
-
+- '0.10'
 env:
   global:
-    - PROTRACTOR_BROWSERS=firefox
-    - KARMA_BROWSERS=Firefox,PhantomJS
-
+  - PROTRACTOR_BROWSERS=firefox
+  - KARMA_BROWSERS=Firefox,PhantomJS
+  - secure: S+gRN7mrXEXf/tlPIK3pcT8/h25D+JeaF2IROTcXNW205uwM2nWlQ3U6hfOJebQXlo50LE17lVLmmUifqUE0R/lEyfTDlnDbpPRaYJIaK4Tw/dYvoytuJX6/Y0fkdIMwYw9JKne8FQewr3Pbi2dBpKGmzQPOBaEUITRCc37usd0=
 install:
-  - npm install
-
+- npm install
 before_script:
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
-
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
 script:
-  - grunt test --reporter=spec
-
+- grunt test --reporter=spec
 after_success:
-  - grunt coveralls
+- grunt codeclimate
