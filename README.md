@@ -2,7 +2,8 @@ Angular Directive Seed
 ======================
 
 [![Build Status](https://travis-ci.org/Jimdo/angular-directive-seed.png)](https://travis-ci.org/Jimdo/angular-directive-seed)
-[![Coverage Status](https://coveralls.io/repos/Jimdo/angular-directive-seed/badge.png?branch=master)](https://coveralls.io/r/Jimdo/angular-directive-seed?branch=master)
+[![Code Climate](https://codeclimate.com/github/Jimdo/angular-directive-seed/badges/gpa.svg)](https://codeclimate.com/github/Jimdo/angular-directive-seed)
+[![Test Coverage](https://codeclimate.com/github/Jimdo/angular-directive-seed/badges/coverage.svg)](https://codeclimate.com/github/Jimdo/angular-directive-seed/coverage)
 [![devDependency Status](https://david-dm.org/Jimdo/angular-directive-seed/dev-status.svg)](https://david-dm.org/Jimdo/angular-directive-seed#info=devDependencies)
 
 Basically a clone of [angular seed](https://github.com/angular/angular-seed)  
