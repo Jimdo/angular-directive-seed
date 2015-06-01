@@ -25,6 +25,8 @@ var basicGlobals = [
  *                             parameter if withModule should be true
  */
 function initGlobals(withModule, additional) {
+  'use strict';
+
   if (angular.isArray(withModule)) {
     additional = withModule;
     withModule = true;
@@ -36,7 +38,7 @@ function initGlobals(withModule, additional) {
 
   if (withModule !== false) {
     /* Initiate the main module */
-    module('myModule');
+    module('angularDirectiveSeed');
   }
 
   inject(function($injector) {
@@ -49,6 +51,8 @@ function initGlobals(withModule, additional) {
 initGlobals.cleanup = [];
 
 function createDirective() {
+  'use strict';
+
   if (!$compile) {
     throw new Error('globals were not initiated');
   }
@@ -70,6 +74,8 @@ function createDirective() {
 
 /* Make sure, there are no unexpected request */
 afterEach(function() {
+  'use strict';
+
   if (window.$httpBackend) {
     $httpBackend.verifyNoOutstandingExpectation();
     $httpBackend.verifyNoOutstandingRequest();
@@ -78,6 +84,8 @@ afterEach(function() {
 
 /* Clean-up globals initiated by initGlobals */
 afterEach(function() {
+  'use strict';
+
   initGlobals.cleanup.forEach(function(global) {
     if (angular.isUndefined(global.value)) {
       delete window[global.name];

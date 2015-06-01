@@ -1,1 +1,1 @@
-angular.bootstrap(document, ['myModule']);
+angular.module('demoApp', ['angularDirectiveSeed']);

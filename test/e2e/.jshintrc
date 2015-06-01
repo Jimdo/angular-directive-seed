@@ -1,0 +1,12 @@
+{
+	"extends": "../../.jshintrc",
+	"maxstatements": false,
+	"jasmine": true,
+	"browser": false,
+	"node": true,
+	"predef": [
+		"browser",
+		"element",
+		"by"
+	]
+}

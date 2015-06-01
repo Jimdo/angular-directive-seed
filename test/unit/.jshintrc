@@ -1,0 +1,6 @@
+{
+	"extends": "../../.jshintrc",
+	"maxstatements": false,
+	"jasmine": true,
+	"browser": true
+}

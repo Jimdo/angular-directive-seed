@@ -1,6 +1,8 @@
 var helper = require('./SpecHelper');
 
 describe('e2e setup', function() {
+  'use strict';
+
   it('should execute tests', function() {
     expect(true).toBe(true);
   });

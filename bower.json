@@ -14,9 +14,11 @@
   ],
   "license": "MIT",
   "private": true,
+  "dependencies": {
+    "angular": "~1.4.0"
+  },
   "devDependencies": {
-    "angular": "~1.2.21",
-    "angular-mocks": "~1.2.21",
+    "angular-mocks": "~1.4.0",
     "jasmine-moar-matchers": "~0.0.2"
   },
   "ignore": [

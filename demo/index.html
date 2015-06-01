@@ -4,11 +4,24 @@
   <meta charset="utf-8">
   <title>My angular demo</title>
   <link rel="stylesheet" type="text/css" href="demo/style.css" />
-  <!-- [[src/less]] -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- injector:scss -->
+  <!-- endinjector -->
+  <!-- injector:less -->
+  <link rel="stylesheet" href="/src/less/style.css">
+  <!-- endinjector -->
 </head>
-<body>
+<body ng-app="demoApp">
   <div my-directive></div>
-  <!-- [[src/js]] -->
+  <!-- bower:js -->
+  <script src="../bower_components/angular/angular.js"></script>
+  <!-- endbower -->
+  <!-- injector:js -->
+  <script src="/src/js/helper.module.js"></script>
+  <script src="/src/js/directive.directive.js"></script>
+  <script src="/ng_templates.js"></script>
+  <!-- endinjector -->
   <script type="text/javascript" src="demo/app.js"></script>
 </body>
 </html>

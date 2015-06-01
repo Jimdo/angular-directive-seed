@@ -1,2 +1,2 @@
 /* jshint unused: false */
-var myModule = angular.module('myModule', []);
+var myModule = angular.module('angularDirectiveSeed', []);

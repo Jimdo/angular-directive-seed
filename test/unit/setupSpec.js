@@ -12,7 +12,7 @@ describe('Setup', function() {
 
   it('should be able to find the angular module', function() {
     initGlobals();
-    expect(angular.module('myModule')).toBeDefined();
+    expect(angular.module('angularDirectiveSeed')).toBeDefined();
   });
 
   it('should be able to create a directive', function() {
@@ -50,9 +50,12 @@ describe('Setup', function() {
     expect($timeout).toBeDefined();
   });
 
-  it('should throw if we try to initiate a directive without having globals', function() {
-    expect(createDirective).toThrow();
-  });
+  it(
+    'should throw if we try to initiate a directive without having globals',
+    function() {
+      expect(createDirective).toThrow();
+    }
+  );
 
   var previousTimeout = window.$timeout;
   it('should keep the global namespace intact part 1', function() {
