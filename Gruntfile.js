@@ -6,9 +6,11 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     angularToolbox: {},
     codeclimate: {
-      options: {
-        file: '<%= angularToolbox.folder.coverageReport %>/lcov.info',
-        token: process.env.CODECLIMATE_REPO_TOKEN
+      report: {
+        options: {
+          file: '<%= angularToolbox.folder.coverageReport %>/lcov.info',
+          token: process.env.CODECLIMATE_REPO_TOKEN
+        }
       }
     }
   });
